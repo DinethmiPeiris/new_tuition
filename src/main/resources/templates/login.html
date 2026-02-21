@@ -13,7 +13,7 @@
 
   <style>
     body {
-      background: white; /* ✅ changed to white */
+      background: white; /* changed to white */
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -86,12 +86,12 @@
   <div class="card-body p-4 p-md-5">
     <h4 class="text-center mb-4 fw-bold text-dark">Welcome Back</h4>
 
-    <!-- ✅ error message -->
+    <!-- error message -->
     <div th:if="${error}" class="alert alert-danger">
       <span th:text="${error}"></span>
     </div>
 
-    <!-- ✅ correct action + method -->
+    <!-- correct action + method -->
     <form th:action="@{/login}" method="post">
 
       <div class="mb-4">
